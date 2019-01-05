@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  box-shadow: 0px 0px 20px 2px #b8b6b8;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+}
+body .main .logo {
+  height: 60px;
+  width: 100px;
+  background: #ccc;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+body .main .title {
+  margin: 0 auto 20px;
+  text-align: center;
+  font-size: 40px;
+}
+body .main button {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 15px 60px;
+  font-size: 16px;
+  border-radius: 25px;
+  color: #ffffff;
+}
+body .main .welcom {
+  width: 40%;
+  height: 100%;
+  background: #58af9b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+body .main .welcom p {
+  margin: 5px auto;
+  text-align: center;
+  font-size: 16px;
+}
+body .main .welcom .change-status {
+  background: transparent;
+}
+body .main .login {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .main .login .title {
+  color: #58af9b;
+}
+body .main .login .suggestion {
+  color: #ccc;
+  margin: 5px auto;
+}
+body .main .login .login-form {
+  display: flex;
+  flex-direction: column;
+}
+body .main .login .login-form input {
+  display: block;
+  background: #f4f8f7;
+  outline: none;
+  width: 380px;
+  height: 40px;
+  padding: 10px;
+  margin: 7px auto;
+  border: none;
+}
+body .main .login .login-button {
+  background: #58af9b;
+}
+
+/*# sourceMappingURL=main.css.map */
