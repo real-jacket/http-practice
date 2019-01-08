@@ -16,12 +16,20 @@ body{
         overflow: hidden;
         display: flex;
         .logo {
-            height: 60px;
-            width: 100px;
-            background: #ccc;
             position: absolute;
             left: 20px;
             top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            .icon{
+                width: 2em;
+                height: 2em;
+                fill: white;
+                margin-right: 10px;
+            }
         }
         .title {
             margin: 0 auto 20px;
@@ -66,9 +74,21 @@ body{
             .title{
                 color: rgb(88, 175, 155);
             }
-            .icon{
-
+            .icon-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon-wrapper{
+                    border: 1px solid #ccc;
+                    border-radius: 50%;
+                    margin: auto 10px;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
+            
             .suggestion {
                 color: #ccc;
                 margin: 5px auto;
@@ -76,20 +96,33 @@ body{
             .login-form{
                 display: flex;
                 flex-direction: column;
-                input{
+                align-items: center;
+                .row{
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        transform: translateX(26px);
+                    }
+                    input{
                         display: block;
                         background: #f4f8f7;
                         outline: none;
                         width: 380px;
                         height: 40px;
-                        padding: 10px;
+                        padding: 10px 10px 10px 36px;
                         margin: 7px auto;
                         border: none;
+                        &:focus{
+                             
+                        }
+                    }
                 }
+                .login-button{
+                    background:rgb(88, 175, 155);
+                    width: 200px;
+                }    
             }
-            .login-button{
-                background:rgb(88, 175, 155);
-            }
+            
         }
     }
 }
